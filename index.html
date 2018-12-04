@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<!--[if IE 8]>			<html class="ie ie8"> <![endif]-->
+<!--[if IE 9]>			<html class="ie ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->	<html> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8" />
+		<title>Point - Stablecoin</title>
+		<meta name="keywords" content="point, stablecoin, blockchain, pointblockchain, criptomoneda, cryptomoneda, crypto, currency cryptocoin, cryptocurrecie, mexico, mexicana" />
+		<meta name="description" content="Point es una nueva moneda con Blockchain propia y política monetaria dinámica que le permite estabilizar su valor sin necesidad de imitar la volatilidad de monedas FIAT de ningún gobierno." />
+		<meta name="Author" content="Juan Sebastian Téllez" />
+
+		<!-- mobile settings -->
+		<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+		<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+
+		<!-- WEB FONTS : use %7C instead of | (pipe) -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700" rel="stylesheet" type="text/css" />
+
+		<!-- CORE CSS -->
+		<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+		<!-- THEME CSS -->
+		<link href="assets/css/essentials.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
+
+		<!-- PAGE LEVEL SCRIPTS -->
+		<link href="assets/css/header-1.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/color_scheme/green.css" rel="stylesheet" type="text/css" id="color_scheme" />
+        
+        
+        <script>
+            function showUsuariosNegocios(){
+        
+        var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+    datos = JSON.parse(this.responseText);
+      document.getElementById("usuarios").innerHTML = datos.usuarios;
+    document.getElementById("negocios").innerHTML = datos.negocios;
+    }
+  };
+  xhttp.open("GET", "https://premia.network/api/index.php?totalusuarios=1", true);
+  xhttp.send();
+        
+        }
+            
+            showUsuariosNegocios();
+        </script>
+        
+        
+	</head>
+
+	<!--
+		AVAILABLE BODY CLASSES:
+		
+		smoothscroll 			= create a browser smooth scroll
+		enable-animation		= enable WOW animations
+
+		bg-grey					= grey background
+		grain-grey				= grey grain background
+		grain-blue				= blue grain background
+		grain-green				= green grain background
+		grain-blue				= blue grain background
+		grain-orange			= orange grain background
+		grain-yellow			= yellow grain background
+		
+		boxed 					= boxed layout
+		pattern1 ... patern11	= pattern background
+		menu-vertical-hide		= hidden, open on click
+		
+		BACKGROUND IMAGE [together with .boxed class]
+		data-background="assets/images/boxed_background/1.jpg"
+	-->
+	<body class="smoothscroll enable-animation" onload="loadDoc()">
+        
+        <div ng-app="myApp" ng-controller="myCtrl">
+        
+
+		<!-- SLIDE TOP -->
+		
+		<!-- /SLIDE TOP -->
+
+
+		<!-- wrapper -->
+		<div id="wrapper">
+
+			<!-- 
+				AVAILABLE HEADER CLASSES
+
+				Default nav height: 96px
+				.header-md 		= 70px nav height
+				.header-sm 		= 60px nav height
+
+				.noborder 		= remove bottom border (only with transparent use)
+				.transparent	= transparent header
+				.translucent	= translucent header
+				.sticky			= sticky header
+				.static			= static header
+				.dark			= dark header
+				.bottom			= header on bottom
+				
+				shadow-before-1 = shadow 1 header top
+				shadow-after-1 	= shadow 1 header bottom
+				shadow-before-2 = shadow 2 header top
+				shadow-after-2 	= shadow 2 header bottom
+				shadow-before-3 = shadow 3 header top
+				shadow-after-3 	= shadow 3 header bottom
+
+				.clearfix		= required for mobile menu, do not remove!
+
+				Example Usage:  class="clearfix sticky header-sm transparent noborder"
+			-->
+			<div id="header" class="sticky transparent noborder clearfix">
+
+				<!-- TOP NAV -->
+				<header id="topNav">
+					<div class="full-container">
+
+						<!-- Mobile Menu Button -->
+						<button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
+							<i class="fa fa-bars"></i>
+						</button>
+
+						<!-- BUTTONS -->
+						<ul class="pull-right nav nav-pills nav-second-main">
+
+							<!-- SEARCH -->
+							
+							<!-- /SEARCH -->
+
+							<!-- QUICK SHOP CART -->
+							
+							<!-- /QUICK SHOP CART -->
+
+						</ul>
+						<!-- /BUTTONS -->
+
+
+						<!-- Logo -->
+						<a class="logo pull-left" href="index.html">
+							<img src="assets/images/logos/point-300x300.png" alt="Logo Point" /> <!-- light logo -->
+							<img src="assets/images/logos/point-300x300.png" alt="" /> <!-- dark logo -->
+						</a>
+
+						<!-- 
+							Top Nav 
+							
+							AVAILABLE CLASSES:
+							submenu-dark = dark sub menu
+						-->
+                        <div class="navbar-collapse pull-right nav-main-collapse collapse submenu-dark">
+							<nav class="nav-main">
+
+								<!--
+									NOTE
+									
+									For a regular link, remove "dropdown" class from LI tag and "dropdown-toggle" class from the href.
+									Direct Link Example: 
+
+									<li>
+										<a href="#">HOME</a>
+									</li>
+								-->
+								<ul id="topMain" class="nav nav-pills nav-main">
+									<li class="active"><!-- HOME -->
+										<a href="index.html">
+											INICIO
+										</a>
+									</li>
+                                    <li><!-- HOME -->
+										<a href="acerca.html">
+											ACERCA
+										</a>
+									</li>
+                                    <li><!-- HOME -->
+										<a href="explorers.html">
+											BLOCK EXPLORER
+										</a>
+									</li>
+                                    <li><!-- HOME -->
+										<a href="negocios.html">
+											NEGOCIOS
+										</a>
+									</li>
+                                    <li><!-- HOME -->
+										<a href="index.html">
+											POOLS
+										</a>
+									</li>
+                                    <li><!-- HOME -->
+										<a href="index.html">
+											ROADMAP
+										</a>
+									</li>
+                                    <li><!-- HOME -->
+										<a href="index.html">
+											WALLETS
+										</a>
+									</li>
+                                    
+                                    
+								</ul>
+
+							</nav>
+						</div>
+						
+
+					</div>
+				</header>
+				<!-- /Top Nav -->
+
+			</div>
+
+
+
+
+			<!-- SLIDER -->
+			<section id="slider" class="fullheight" style="background:url('assets/images/demo/particles_bg.jpg')">
+				<span class="overlay dark-2"><!-- dark overlay [0 to 9 opacity] --></span>
+
+				<canvas id="canvas-particle" data-rgb="105, 155, 31"><!-- CANVAS PARTICLES --></canvas>
+
+				<div class="display-table">
+					<div class="display-table-cell vertical-align-middle">
+						
+						<div class="container text-center">
+							
+							<h1 class="nomargin wow fadeInUp" data-wow-delay="0.4s">
+								POINT ES
+								<!--
+									TEXT ROTATOR
+									data-animation="fade|flip|flipCube|flipUp|spin"
+								-->
+								<span class="rotate " data-animation="fade" data-speed="1500">
+									STABLECOIN,MEXICANA,MINABLE,DE BAJA VOLATILIDAD, DE USO COTIDIANO, VELOZ
+								</span>
+							</h1>
+
+							<p class="lead font-lato size-30 wow fadeInUp" data-wow-delay="0.7s">
+								<span class="countTo" data-speed="4000" id="usuarios">0</span>+ <span class="text-warning">Usuarios</span> | 
+								<span class="countTo" data-speed="4000" id="negocios">0</span>+ <span class="theme-color weight-400 font-style-italic">Negocios</span>
+							</p>
+							
+							<a href="https://play.google.com/store/apps/details?id=com.thunkable.android.juantellez.PointsRCool" target="_blank"><img src="assets/images/logos/Get_it_on_Google_play.png" class="img-responsive" width="256px"></a>
+
+						</div>
+
+					</div>
+				</div>
+
+			</section>
+			<!-- /SLIDER -->
+
+
+
+			<!-- Welcome -->
+			<section>
+				<div class="container">
+
+					<div class="text-center">
+						<h1>¡Bienvenido a <span>Point</span>.</h1>
+						<h2 class="col-sm-10 col-sm-offset-1 nomargin-bottom weight-400">La primera criptomoneda Mexicana, desarrollada para ser un medio de transferencia de valor en transacciones cotidianas.</h2>
+					</div>
+
+				</div>
+			</section>
+			<!-- Welcome -->
+
+
+
+			<!-- -->
+			<section>
+				<div class="container">
+
+					<div class="row">
+					
+						<div class="col-md-5 col-sm-5">
+							
+                            
+                            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/NE2VoqwLDGU?rel=0&amp;showinfo=0"></iframe>
+              </div>
+                            
+						</div>
+
+						<div class="col-md-7 col-sm-7">
+
+							<header class="margin-bottom-60">
+								<h2>Acerca de <strong>Point</strong></h2>
+								<p class="lead font-lato">¡La primera criptomoneda Mexicana!</p>
+							</header>
+                            <p>Existe una gran cantidad de criptomonedas en la actualidad, con muy diversos fines y objetivos y cada día se suman más a la lista. La primer criptomoneda creada, Bitcoin, inició con un objetivo claro, sin embargo sus características técnicas posiblemente no consideraban la aceptación que ha tenido y las aplicaciones y usos que se le daría.</p>
+							<p><strong>Point</strong> es una criptomoneda que tiene como objetivo cumplir la meta de ser una moneda de uso común en transacciones económicas cotidianas de la población general para lo cual se estudió los posibles factores que han impedido a las criptomonedas serlo realmente. </p>
+
+							<a href="acerca.html" class="btn btn-lg btn-default btn-bordered">
+                            <i class="fa fa-info"></i>
+                            <span>Quiero saber más</span>
+                            </a>
+
+						</div>
+
+					</div>
+
+				</div>
+			</section>
+			<!-- / -->
+            
+            <!-- Services -->
+			<section>
+				<div class="container">
+
+					<div class="row">
+
+						<div class="col-sm-6 col-md-4 col-lg-4">
+
+							<div class="box-icon box-icon-left">
+								<a class="box-icon-title" href="#">
+									<i class="fa fa-navicon"></i>
+									<h2>BLOCKCHAIN</h2>
+								</a>
+								<p class="text-muted">Point utiliza su propio Blockchain por lo cual no depende de otras criptomonedas o plataformas.</p>
+							</div>
+
+						</div>
+
+						<div class="col-sm-6 col-md-4 col-lg-4">
+
+							<div class="box-icon box-icon-left">
+								<a class="box-icon-title" href="#">
+									<i class="fa fa-arrow-up"></i>
+									<h2>MINERÍA</h2>
+								</a>
+								<p class="text-muted">Point utiliza Prueba de Trabajo (PoW) como método para la confirmación de bloques.</p>
+							</div>
+
+						</div>
+
+						<div class="col-sm-6 col-md-4 col-lg-4">
+
+							<div class="box-icon box-icon-left">
+								<a class="box-icon-title" href="#">
+									<i class="fa fa-credit-card"></i>
+									<h2>WALLET</h2>
+								</a>
+								<p class="text-muted">Core, Web, Light, Movil y Paper Wallet disponibles para su utilización.</p>
+							</div>
+
+						</div>
+
+						<div class="col-sm-6 col-md-4 col-lg-4">
+
+							<div class="box-icon box-icon-left">
+								<a class="box-icon-title" href="#">
+									<i class="fa fa-line-chart"></i>
+									<h2>LIBRE DE ALTA VOLATILIDAD</h2>
+								</a>
+								<p class="text-muted">Al utilizar el precio del Dólar Americano como referencia cambiaria por consenso.</p>
+							</div>
+
+						</div>
+
+						<div class="col-sm-6 col-md-4 col-lg-4">
+
+							<div class="box-icon box-icon-left">
+								<a class="box-icon-title" href="#">
+									<i class="fa fa-lock"></i>
+									<h2>LIBRE DE ESPECULACIÓN</h2>
+								</a>
+								<p class="text-muted">Al no estar sujeta a manipulación en los mercados de criptomonedas.</p>
+							</div>
+
+						</div>
+
+						<div class="col-sm-6 col-md-4 col-lg-4">
+
+							<div class="box-icon box-icon-left">
+								<a class="box-icon-title" href="#">
+									<i class="et-flag"></i>
+									<h2>FÁCIL DE OBTENER</h2>
+								</a>
+								<p class="text-muted">Point es una moneda para la comunidad y por eso es fácil de obtener.</p>
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+			</section>
+			<!-- /Services -->
+
+			<!-- -->
+			<section class="alternate">
+				<div class="container">
+
+					<div class="row">
+
+						<div class="col-md-4 col-sm-4">
+                            <h4><a href="roadmap.html">Estado de la red</a></h4>
+							<ul class="list-group">
+                                <li class="list-group-item">Dificultad de minado: <span id="dificultad"></span></li>
+                                <li class="list-group-item">Bloques minados: <span id="height"></span></li>
+                                <li class="list-group-item">Hashrate: <span id="hashrate"></span> MH/s</li>
+                                <li class="list-group-item">Suministro actual: <span id="supply"></span> POINT</li>
+                            </ul>
+                            <h6 class="text-info ">Información actualizada cada 15 segundos.</h6>
+						</div>
+
+						<!-- skills -->
+						<div class="col-md-4 col-sm-4">
+							<h4><a href="roadmap.html">Mapa de Ruta</a></h4>
+
+							<label>
+								<span class="pull-right">50%</span>
+								DESARROLLO
+							</label>
+							<div class="progress progress-xxs">
+								<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%; min-width: 2em;"></div>
+							</div>
+
+							<label>
+								<span class="pull-right">5%</span>
+								DISTRIBUCIÓN
+							</label>
+							<div class="progress progress-xxs">
+								<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100" style="width: 5%; min-width: 2em;"></div>
+							</div>
+
+							<label>
+								<span class="pull-right">1%</span>
+								ACEPTACIÓN
+							</label>
+							<div class="progress progress-xxs">
+								<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="100" style="width: 1%; min-width: 2em;"></div>
+							</div>
+
+							
+							<a href="roadmap.html" class="btn btn-featured btn-default">
+                                <span>VER MAPA DE RUTA</span>
+                                <i class="fa fa-road"></i>
+                            </a>
+
+						</div>
+						<!-- /skills -->
+
+						<!-- recent news -->
+						<div class="col-md-4 col-sm-4">
+							<h4>Síguenos en Facebook</h4>
+
+							<!--
+	Replace stepofweb with your facebook id
+
+	.hidden-xs = hide on mobile
+-->
+<iframe class="hidden-xs noborder" src="https://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fpointblockchain&width=350&height=258&colorscheme=light&show_faces=true&header=false&stream=false&show_border=false" style="width:350px; height:258px;">
+</iframe>
+							
+
+						</div>
+						<!-- /recent news -->
+
+					</div>
+
+				</div>
+			</section>
+			<!-- / -->
+
+
+
+			<!-- CALLOUT -->
+			<div class="alert alert-transparent bordered-bottom nomargin">
+				<div class="container">
+
+					<div class="row">
+
+						<div class="col-md-9 col-sm-12"><!-- left text -->
+							<h3>¡Obtén tus primeros <span><strong>500 POINT GRÁTIS</strong></span> al instalar la App para Android!</h3>
+							<p class="font-lato weight-300 size-20 nomargin-bottom">
+								No esperes más, es muy rápido y fácil.
+							</p>
+						</div><!-- /left text -->
+
+						
+						<div class="col-md-3 col-sm-12 text-right"><!-- right btn -->
+							<a href="https://play.google.com/store/apps/details?id=com.thunkable.android.juantellez.PointsRCool" rel="nofollow" target="_blank" class="btn btn-primary btn-lg">INSTALAR AHORA</a>
+						</div><!-- /right btn -->
+
+					</div>
+
+				</div>
+			</div>
+			<!-- /CALLOUT -->
+
+
+
+			<!-- FOOTER -->
+			
+			<!-- /FOOTER -->
+
+		</div>
+		<!-- /wrapper -->
+
+
+		<!-- SCROLL TO TOP -->
+		<a href="#" id="toTop"></a>
+
+
+		<!-- PRELOADER -->
+		<div id="preloader">
+			<div class="inner">
+				<span class="loader"></span>
+			</div>
+		</div><!-- /PRELOADER -->
+
+
+		<!-- JAVASCRIPT FILES -->
+		<script type="text/javascript">var plugin_path = 'assets/plugins/';</script>
+		<script type="text/javascript" src="assets/plugins/jquery/jquery-2.2.3.min.js"></script>
+
+		<script type="text/javascript" src="assets/js/scripts.js"></script>
+		
+
+		<!-- PARTICLE EFFECT -->
+		<script type="text/javascript" src="assets/plugins/effects/canvas.particles.js"></script>
+            
+            
+           
+            
+        
+        <script>
+function loadDoc() {
+    
+    showUsuariosNegocios();
+    
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("dificultad").innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("GET", "http://explorer.pointcoin.website:3002/api/getdifficulty", true);
+  xhttp.send();
+    
+    var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("height").innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("GET", "http://explorer.pointcoin.website:3002/api/getblockcount", true);
+  xhttp.send();
+    
+    var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("hashrate").innerHTML = Math.round((this.responseText / 1024) / 1024 * 100) / 100;
+    }
+  };
+  xhttp.open("GET", "http://explorer.pointcoin.website:3002/api/getnetworkhashps", true);
+  xhttp.send();
+    
+    var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("supply").innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("GET", "http://explorer.pointcoin.website:3002/ext/getmoneysupply", true);
+  xhttp.send();
+    
+    
+}
+            
+            var myVar = setInterval(myTimer, 15000);
+
+function myTimer() {
+    var d = new Date();
+    loadDoc();
+}
+            
+</script>
+        </div>
+        
+	</body>
+</html>
