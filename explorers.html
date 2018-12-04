@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<!--[if IE 8]>			<html class="ie ie8"> <![endif]-->
+<!--[if IE 9]>			<html class="ie ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->	<html> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8" />
+		<title>Point Blockchain - Blockexplorers</title>
+		<meta name="keywords" content="point, coin, blockchain, pointblockchain, premia, network, explorer, bitcoin, litecoin, dogecoin,ethereum, btc, ltc, eth, xrp" />
+		<meta name="description" content="Block explorer de la criptomoneda Point" />
+		<meta name="Author" content="Juan Sebastián Téllez" />
+
+		<!-- mobile settings -->
+		<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+		<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+
+		<!-- WEB FONTS : use %7C instead of | (pipe) -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700" rel="stylesheet" type="text/css" />
+
+		<!-- CORE CSS -->
+		<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		
+		<!-- THEME CSS -->
+		<link href="assets/css/essentials.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
+
+		<!-- PAGE LEVEL SCRIPTS -->
+		<link href="assets/css/header-1.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/color_scheme/green.css" rel="stylesheet" type="text/css" id="color_scheme" />
+	</head>
+
+	<!--
+		AVAILABLE BODY CLASSES:
+		
+		smoothscroll 			= create a browser smooth scroll
+		enable-animation		= enable WOW animations
+
+		bg-grey					= grey background
+		grain-grey				= grey grain background
+		grain-blue				= blue grain background
+		grain-green				= green grain background
+		grain-blue				= blue grain background
+		grain-orange			= orange grain background
+		grain-yellow			= yellow grain background
+		
+		boxed 					= boxed layout
+		pattern1 ... patern11	= pattern background
+		menu-vertical-hide		= hidden, open on click
+		
+		BACKGROUND IMAGE [together with .boxed class]
+		data-background="assets/images/boxed_background/1.jpg"
+	-->
+	<body class="smoothscroll enable-animation">
+
+		<!-- SLIDE TOP -->
+		
+		<!-- /SLIDE TOP -->
+
+
+		<!-- wrapper -->
+		<div id="wrapper">
+
+			<!-- 
+				AVAILABLE HEADER CLASSES
+
+				Default nav height: 96px
+				.header-md 		= 70px nav height
+				.header-sm 		= 60px nav height
+
+				.noborder 		= remove bottom border (only with transparent use)
+				.transparent	= transparent header
+				.translucent	= translucent header
+				.sticky			= sticky header
+				.static			= static header
+				.dark			= dark header
+				.bottom			= header on bottom
+				
+				shadow-before-1 = shadow 1 header top
+				shadow-after-1 	= shadow 1 header bottom
+				shadow-before-2 = shadow 2 header top
+				shadow-after-2 	= shadow 2 header bottom
+				shadow-before-3 = shadow 3 header top
+				shadow-after-3 	= shadow 3 header bottom
+
+				.clearfix		= required for mobile menu, do not remove!
+
+				Example Usage:  class="clearfix sticky header-sm transparent noborder"
+			-->
+			<div id="header" class="sticky clearfix">
+
+				<!-- TOP NAV -->
+				<header id="topNav">
+					<div class="full-container">
+
+						<!-- Mobile Menu Button -->
+						<button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
+							<i class="fa fa-bars"></i>
+						</button>
+
+						<!-- BUTTONS -->
+						<ul class="pull-right nav nav-pills nav-second-main">
+
+							<!-- SEARCH -->
+							
+							<!-- /SEARCH -->
+
+							<!-- QUICK SHOP CART -->
+							
+							<!-- /QUICK SHOP CART -->
+
+						</ul>
+						<!-- /BUTTONS -->
+
+
+						<!-- Logo -->
+						<a class="logo pull-left" href="index.html">
+							<img src="assets/images/logos/point-300x300.png" alt="Logo Point" /> <!-- light logo -->
+							<img src="assets/images/logos/point-300x300.png" alt="" /> <!-- dark logo -->
+						</a>
+
+						<!-- 
+							Top Nav 
+							
+							AVAILABLE CLASSES:
+							submenu-dark = dark sub menu
+						-->
+                        <div class="navbar-collapse pull-right nav-main-collapse collapse submenu-dark">
+							<nav class="nav-main">
+
+								<!--
+									NOTE
+									
+									For a regular link, remove "dropdown" class from LI tag and "dropdown-toggle" class from the href.
+									Direct Link Example: 
+
+									<li>
+										<a href="#">HOME</a>
+									</li>
+								-->
+								<ul id="topMain" class="nav nav-pills nav-main">
+									<li class="active"><!-- HOME -->
+										<a href="index.html">
+											INICIO
+										</a>
+									</li>
+                                    <li><!-- HOME -->
+										<a href="acerca.html">
+											ACERCA
+										</a>
+									</li>
+                                    <li><!-- HOME -->
+										<a href="explorers.html">
+											BLOCK EXPLORER
+										</a>
+									</li>
+                                    <li><!-- HOME -->
+										<a href="negocios.html">
+											NEGOCIOS
+										</a>
+									</li>
+                                    <li><!-- HOME -->
+										<a href="index.html">
+											POOLS
+										</a>
+									</li>
+                                    <li><!-- HOME -->
+										<a href="roadmap.html">
+											ROADMAP
+										</a>
+									</li>
+                                    <li><!-- HOME -->
+										<a href="index.html">
+											WALLETS
+										</a>
+									</li>
+                                    
+                                    
+								</ul>
+
+							</nav>
+						</div>
+						
+
+					</div>
+				</header>
+				<!-- /Top Nav -->
+
+			</div>
+
+
+			<!-- 
+				PAGE HEADER 
+				
+				CLASSES:
+					.page-header-xs	= 20px margins
+					.page-header-md	= 50px margins
+					.page-header-lg	= 80px margins
+					.page-header-xlg= 130px margins
+					.dark			= dark page header
+
+					.shadow-before-1 	= shadow 1 header top
+					.shadow-after-1 	= shadow 1 header bottom
+					.shadow-before-2 	= shadow 2 header top
+					.shadow-after-2 	= shadow 2 header bottom
+					.shadow-before-3 	= shadow 3 header top
+					.shadow-after-3 	= shadow 3 header bottom
+			-->
+			<section class="page-header page-header-xlg parallax parallax-3" style="background-image:url('assets/images/demo/vision-min.jpg')">
+				<div class="overlay dark-5"><!-- dark overlay [1 to 9 opacity] --></div>
+
+				<div class="container">
+
+					<h1>Block Explorer</h1>
+
+					<!-- breadcrumbs -->
+					<ol class="breadcrumb">
+						<li><a href="index.html">Inicio</a></li>
+						<li class="active">Block Explorer</li>
+					</ol><!-- /breadcrumbs -->
+
+				</div>
+			</section>
+			<!-- /PAGE HEADER -->
+
+
+
+
+			<!-- -->
+			<section>
+				<div class="container">
+					
+					<div class="row">
+
+	<div class="col-md-3">
+
+		<div class="box-static box-border-top">
+			<div class="box-title">
+				<h4>¿Que es el Block Explorer?</h4>
+			</div>
+			<p>Es una interfaz que te permite visualizar las transacciones realizadas y registradas en la cadena de bloques de Point.</p>
+		</div>
+
+	</div>
+
+	<div class="col-md-3">
+
+		<div class="box-flip box-color box-icon box-icon-center box-icon-round box-icon-large text-center">
+			<div class="front">
+				<div class="box1" style="background-color:#a0ce4e;">
+					<div class="box-icon-title">
+						<i class="fa fa-refresh fa-spin"></i>
+						<h2>Oficial</h2>
+					</div>
+					<p>Explorador de bloques mantenido por el staff de Point.</p>
+				</div>
+			</div>
+
+			<div class="back">
+				<div class="box2" style="background-color:#a0ce4e;">
+					<h4>Donaciones</h4>
+					<hr />
+					<p>Apoya al mantenimiento de este block explorer donando Point a la direción: <small>8seEwMCeFTPUsAoV37HqMXsQeNdSmf4Hr9</small></p>
+					<a href="http://explorer.pointcoin.website:3002/" target="_blank" class="btn btn-translucid btn-lg btn-block">IR AL BLOCK EXPLORER</a>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="col-md-3">
+        
+	</div>
+
+	<div class="col-md-3">
+        
+	</div>
+
+</div>
+					
+				</div>
+			</section>
+			<!-- / -->
+
+	
+			<!-- BUTTON CALLOUT -->
+			<div class="alert alert-transparent bordered-bottom nomargin">
+				<div class="container">
+
+					<div class="row">
+
+						<div class="col-md-9 col-sm-12"><!-- left text -->
+							<h3>¡Obtén tus primeros <span><strong>500 POINT GRÁTIS</strong></span> al instalar la App para Android!</h3>
+							<p class="font-lato weight-300 size-20 nomargin-bottom">
+								No esperes más, es muy rápido y fácil.
+							</p>
+						</div><!-- /left text -->
+
+						
+						<div class="col-md-3 col-sm-12 text-right"><!-- right btn -->
+							<a href="https://play.google.com/store/apps/details?id=com.thunkable.android.juantellez.PointsRCool" rel="nofollow" target="_blank" class="btn btn-primary btn-lg">INSTALAR AHORA</a>
+						</div><!-- /right btn -->
+
+					</div>
+
+				</div>
+			</div>
+			<!-- /BUTTON CALLOUT -->
+
+
+
+			<!-- FOOTER -->
+			<div w3-include-html="footer.html"></div>
+			<!-- /FOOTER -->
+
+		</div>
+		<!-- /wrapper -->
+
+
+		<!-- SCROLL TO TOP -->
+		<a href="#" id="toTop"></a>
+        
+        <script>
+            includeHTML();
+            </script>
+        
+		<!-- PRELOADER -->
+		<div id="preloader">
+			<div class="inner">
+				<span class="loader"></span>
+			</div>
+		</div><!-- /PRELOADER -->
+
+
+		<!-- JAVASCRIPT FILES -->
+		<script type="text/javascript">var plugin_path = 'assets/plugins/';</script>
+		<script type="text/javascript" src="assets/plugins/jquery/jquery-2.2.3.min.js"></script>
+
+		<script type="text/javascript" src="assets/js/scripts.js"></script>
+		
+		
+	</body>
+</html>
