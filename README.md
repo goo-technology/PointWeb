@@ -1,2 +1,2 @@
 # PointWeb
-Sitio web de Point
+Sitio web de Point StableCoin
